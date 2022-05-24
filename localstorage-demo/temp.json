@@ -1,0 +1,1372 @@
+{
+    "actions": [
+      {
+        "branchId": "continue",
+        "label": "Continue",
+        "position": 1,
+        "submitForm": true
+      }
+    ],
+    "fields": [
+      {
+        "fieldId": "cf6bfeca-3f90-44c1-92b2-b641a8f4c711",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Student Name:",
+        "processVariable": "Student_Name",
+        "size": "medium",
+        "subtype": "text",
+        "type": "text",
+        "validation": {},
+        "disabled": true
+      },
+      {
+        "fieldId": "18657696-dbfa-48a0-9c09-f42e70358539",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Date of Incident:",
+        "processVariable": "Date_of_Incident",
+        "size": "small",
+        "type": "date",
+        "validation": {},
+        "disabled": true
+      },
+      {
+        "fieldId": "ce2a7ed9-cc73-4a8a-92a2-e516d34e609a",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Time of Incident:",
+        "processVariable": "Time_of_Incident",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {},
+        "disabled": true
+      },
+      {
+        "fieldId": "293eaf0b-d8e2-42d3-9cc4-7714e13f38c8",
+        "permissions": false,
+        "label": "Separator",
+        "type": "separator",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "23db71f4-97c8-46e7-9358-e05c9fc0bd6d",
+        "permissions": false,
+        "contents": "<h3 style=\"text-align:center\">RESTRAINT</h3>",
+        "label": "Instruction",
+        "type": "html",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "e2a56f0e-f2fe-4de7-8f69-71bc1c51f8ff",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Behavior that prompted use of Physical Restraint:",
+        "processVariable": "Behavior_that_prompted_use_of_Physical_Restraint",
+        "size": "full",
+        "subtype": "multiline",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "8605d6f1-f565-41ad-8b24-183ce553df02",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Less intrusive interventions that have failed or been deemed inappropriate:",
+        "processVariable": "Less_intrusive_interventions_that_have_failed_or_been_deemed_inappropriate",
+        "size": "full",
+        "subtype": "multiline",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "aefcfdd6-763f-4e2b-a1af-5ae7c7223457",
+        "permissions": false,
+        "label": "Separator",
+        "type": "separator",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "5f09e3f6-d1c6-4dc1-91e5-0142a2fe180d",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Number of staff involved in implementing the restaint",
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ],
+        "processVariable": "Number_of_staff_involved_in_implementing_the_restaint",
+        "size": "medium",
+        "subtype": "radios",
+        "type": "multiple",
+        "validation": {
+          "required": true
+        },
+        "recordFields": {},
+        "display": "horizontal"
+      },
+      {
+        "fieldId": "bf06cef6-b8e3-4e1f-95c6-cfb625533023",
+        "permissions": false,
+        "contents": "<p><strong>Please enter the names and email addresses of staff involved in implementing the restraint:</strong></p>",
+        "label": "Instruction",
+        "type": "html",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "204af09a-ee17-41fc-8aeb-62db528b9fd9",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Implementor_1_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "e3dcda3c-86a9-40dc-896d-2115a9572fbe",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Implementor_1_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "bc353cca-0825-4e7f-8874-11a9568e3b4e",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Implementor_1_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "782f8c87-c26f-4e28-baef-ca2c60eca958",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "2b34fc48-ef51-4599-9ef6-fc029aee11ea",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Implementor_2_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "8d85c417-4d03-4ff8-8598-c50b6ea8b252",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "0d988be4-e32e-4187-9721-214a9b5a5416",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Implementor_2_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "630c4aed-b9e8-4b92-94e0-e9a7d57778f1",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "45f41eb2-d822-4cd2-8b04-b3648a726abf",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Implementor_2_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "9a72cb3a-1819-45f0-837d-d090ea11adeb",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "d75de2e7-fdcc-410c-be84-d2b096101b06",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "7f779654-e8f4-41f7-82f2-327e3213a573",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "0bbb3524-ccf7-4fda-b035-5e4adb0411f3",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Implementor_3_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "9adcc8da-c102-4051-9bee-ea05ca39a6fa",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "0ddb7ed5-38bb-440e-a47d-f173a2df5db0",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "57bff4cf-cd14-44ad-b6f4-9ce2a96dee4b",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "bb9b4cec-933e-44b2-b7d1-742b9f965111",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Implementor_3_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "67e49ab3-c39b-418e-9314-041702440a47",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "34a90867-5d3d-4820-bc09-ea688cd11851",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "b92ef2a9-b961-42e4-8489-968a4d23fa6d",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "e2be31d1-43d2-42f7-a4f1-f32f4c9472e9",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Implementor_3_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "b637b4ee-38c8-4df1-a7f8-3f352428245f",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "f4a2007f-ba91-4d5f-a2d2-857dd4b21ccf",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "86fec59a-3136-4698-b6f9-aa7d83cf1976",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name",
+        "processVariable": "Implementor_4_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "acf4090a-b06c-4876-85d6-8df2c9971245",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "d89350fb-b19c-4a37-95ca-2d03c9b228d8",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "d31012d5-81b1-4c32-9d26-29fb02018a53",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Implementor_4_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "8ab05825-c656-4daf-99f9-e72727794f7c",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "1771083a-929e-426c-b5be-2b73f6f62e68",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "6d5eda62-7fc4-4699-877b-5247832041b9",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Implementor_4_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "cebe16cd-06ef-4287-a467-605ea576ca05",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "855d7d46-566b-412f-9a96-16bc0b19de43",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name",
+        "processVariable": "Implementor_5_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "a3efe8ef-8650-491e-a34b-66a18b254af7",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Implementor_5_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "385f50f5-23ed-45e3-8ec8-35411a32d405",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "e22e5c6e-a9af-465c-b474-c87d4b3c63c1",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_implementing_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Implementor_5_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "26626e48-73f3-42b7-affa-52a80cca1061",
+        "permissions": false,
+        "label": "Separator",
+        "type": "separator",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "eeebac7e-24a1-4002-b173-73d7bfddb12f",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Number of staff involved in monitoring the restaint",
+        "options": [
+          {
+            "label": "1",
+            "value": "1"
+          },
+          {
+            "label": "2",
+            "value": "2"
+          },
+          {
+            "label": "3",
+            "value": "3"
+          },
+          {
+            "label": "4",
+            "value": "4"
+          },
+          {
+            "label": "5",
+            "value": "5"
+          }
+        ],
+        "processVariable": "Number_of_staff_involved_in_monitoring_the_restaint",
+        "size": "medium",
+        "subtype": "radios",
+        "type": "multiple",
+        "validation": {
+          "required": true
+        },
+        "recordFields": {},
+        "display": "horizontal"
+      },
+      {
+        "fieldId": "503d887b-ed20-4f24-9660-4782c7c190c2",
+        "permissions": false,
+        "contents": "<p><strong>Please enter the names and email addresses of staff involved in monitoring the restraint:</strong></p>",
+        "label": "Instruction",
+        "type": "html",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "4ec0e911-7296-4365-8d13-41f686de505e",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Monitor_1_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "443d24fd-39a0-400b-b7cd-357b35d5b78a",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Monitor_1_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "32c93919-e487-4343-b603-3de1becc20ca",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Monitor_1_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "e28b08c0-90e5-43b8-a9ff-bd81542f0e83",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "a668affa-5a3a-4aea-8429-c859dd19ffaa",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Monitor_2_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "6d471f2e-75e7-4c63-8fc0-b74c8a0080b6",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "0a2e4c61-ccea-4815-90f0-846ac09e92eb",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Monitor_2_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "c6b2c1b6-fd21-47a6-a183-3d89e9e14590",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "!=",
+              "conditionId": "880e0b3c-d57b-42c2-a4a7-1dfc3f5212eb",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Monitor_2_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "7792da73-0da7-4587-80d7-7e7bff36c9b0",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "2ddd7e17-2142-450b-9e45-4700796dae24",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "7e06bd5e-683e-4e3f-b634-ee9903b6792c",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Monitor_3_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "d070313e-d30a-4179-a38f-9a45dd6fcf92",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "d0e86a51-f407-4305-8d5a-14352047715e",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "e1f15de9-be7d-4976-bcf5-727a8dd26d28",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "fc950a52-4200-4ddc-a8ac-b30ae5c0c1e0",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Monitor_3_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "51845135-2064-4c3a-85b5-72b6d215c927",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Monitor_3_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "950619f8-e448-4a7b-a8b4-6951b16b6858",
+        "permissions": false,
+        "conditionalVisibility": {
+            "conditions": [
+                {
+                  "comparison": "==",
+                  "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+                  "value": "1",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+                  "value": "2",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+                  "value": "3",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "d68cbc16-a0f8-4c9e-9ea4-77d290b1b312",
+                  "value": "4",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "a31f2ee3-7f24-42fe-bb85-df30bf030467",
+                  "value": "5",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Monitor_4_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "879dbcca-b3be-4230-a866-c92c6660e51c",
+        "permissions": false,
+        "conditionalVisibility": {
+            "conditions": [
+                {
+                  "comparison": "==",
+                  "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+                  "value": "1",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+                  "value": "2",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+                  "value": "3",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "d68cbc16-a0f8-4c9e-9ea4-77d290b1b312",
+                  "value": "4",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "a31f2ee3-7f24-42fe-bb85-df30bf030467",
+                  "value": "5",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Monitor_4_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "410e1edf-f102-4f6d-b317-0aec7d9bb43a",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "d68cbc16-a0f8-4c9e-9ea4-77d290b1b312",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "a31f2ee3-7f24-42fe-bb85-df30bf030467",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Monitor_4_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "caf7e862-851f-4dae-8b40-206bb424077f",
+        "permissions": false,
+        "conditionalVisibility": {
+            "conditions": [
+                {
+                  "comparison": "==",
+                  "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+                  "value": "1",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+                  "value": "2",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+                  "value": "3",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "d68cbc16-a0f8-4c9e-9ea4-77d290b1b312",
+                  "value": "4",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                },
+                {
+                  "comparison": "==",
+                  "conditionId": "a31f2ee3-7f24-42fe-bb85-df30bf030467",
+                  "value": "5",
+                  "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+                }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Monitor_5_Full_Name",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "4300c79b-fc7b-4cea-a417-6ab4f6535fb7",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "d0e86a51-f407-4305-8d5a-14352047715e",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "e1f15de9-be7d-4976-bcf5-727a8dd26d28",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "fc950a52-4200-4ddc-a8ac-b30ae5c0c1e0",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "8c65e722-e897-4394-a261-bb42fa0ad65e",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "022cdbcc-5b06-476d-a992-996ffc1e9a8b",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Role / Position:",
+        "processVariable": "Monitor_5_Role_Pos",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "b6dcf9e2-7074-474a-857c-cf4d86c52245",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [
+            {
+              "comparison": "==",
+              "conditionId": "b4da51b4-66e7-4ed6-ad93-648abba33723",
+              "value": "1",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "25d5c4e3-59b6-4ba2-ba26-469d20097e95",
+              "value": "2",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "04f314d2-f6a0-491d-8cda-0a332011f727",
+              "value": "3",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "acf20be4-6b01-49db-a482-433a820586af",
+              "value": "4",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            },
+            {
+              "comparison": "==",
+              "conditionId": "a267856d-bddb-4952-b7e4-e595122e324e",
+              "value": "5",
+              "variable": "Number_of_staff_involved_in_monitoring_the_restaint"
+            }
+          ],
+          "logicalOperator": "OR",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Monitor_5_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "ece09e92-ca9a-47be-96e9-b4ed895b7fb4",
+        "permissions": false,
+        "contents": "<p><strong>Log of events and student behaviors during the restraint including student behavior during the restraint and type of restraint used:</strong></p>",
+        "label": "Instruction",
+        "type": "html",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "8d486e7c-1d49-4cb8-9f55-a20c2738284d",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Length of Restraint:",
+        "processVariable": "Length_of_Restraint",
+        "size": "small",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "2c151ba9-afaf-42d8-a34a-e7a01244fc3a",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Log:",
+        "processVariable": "Log",
+        "size": "full",
+        "subtype": "multiline",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "febff434-9d99-4ed5-a983-8cbaccc5717c",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Final event of the restraint:",
+        "processVariable": "Final_event_of_the_restraint",
+        "size": "full",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "4606d310-12d4-4c45-bc73-6dfb362e4fbe",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Was the student informed of the reason for the restraint? ",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes"
+          },
+          {
+            "label": "No",
+            "value": "No"
+          }
+        ],
+        "processVariable": "Was_the_student_informed_of_the_reason_for_the_restraint_",
+        "size": "full",
+        "subtype": "radios",
+        "type": "multiple",
+        "validation": {
+          "required": true
+        },
+        "recordFields": {},
+        "display": "horizontal"
+      },
+      {
+        "fieldId": "a0cf4ca7-8289-4bb7-8b18-4891d2e38003",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Was the student informed of what he/she needed to do to be released from the restraint?",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes"
+          },
+          {
+            "label": "No",
+            "value": "No"
+          }
+        ],
+        "processVariable": "Was_the_student_informed_of_what_heshe_needed_to_do_to_be_released_from_the_restraint",
+        "size": "full",
+        "subtype": "radios",
+        "type": "multiple",
+        "validation": {
+          "required": true
+        },
+        "recordFields": {},
+        "display": "horizontal"
+      },
+      {
+        "fieldId": "093cfc34-3b99-4494-8e2c-a19ad4a4881f",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Student reaction to the restraint:",
+        "processVariable": "Student_reaction_to_the_restraint",
+        "size": "full",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "d44816f3-4b25-4e09-b73e-85a89f800ca7",
+        "permissions": false,
+        "label": "Separator",
+        "type": "separator",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "efe463cd-fe20-4414-91cc-a00f30e63962",
+        "permissions": false,
+        "contents": "<p><strong>Please enter the name and email address of the administrator informed of the use of restraint:</strong></p>",
+        "label": "Instruction",
+        "type": "html",
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        }
+      },
+      {
+        "fieldId": "bccb16c7-f5bc-4479-a7ff-690b63dc3f19",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Full Name:",
+        "processVariable": "Informed_Admin_Name",
+        "size": "medium",
+        "subtype": "text",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "a418200c-2060-456d-b1bd-0115af17b708",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Email Address:",
+        "processVariable": "Informed_Admin_Email",
+        "size": "medium",
+        "subtype": "email",
+        "type": "text",
+        "validation": {
+          "required": true
+        }
+      },
+      {
+        "fieldId": "268f3daf-26e8-4778-b2c7-080dae5c40c5",
+        "permissions": false,
+        "conditionalVisibility": {
+          "conditions": [],
+          "logicalOperator": "AND",
+          "visibilityType": "remove"
+        },
+        "label": "Would you like to add another staff member?",
+        "options": [
+          {
+            "label": "Yes",
+            "value": "Yes"
+          },
+          {
+            "label": "No",
+            "value": "No"
+          }
+        ],
+        "processVariable": "Would_you_like_to_add_another_staff_member",
+        "size": "full",
+        "subtype": "radios",
+        "type": "multiple",
+        "validation": {
+          "required": true
+        },
+        "recordFields": {},
+        "display": "horizontal"
+      }
+    ],
+    "page": {
+      "description": "",
+      "title": ""
+    },
+    "useWaitPage": true
+  }
