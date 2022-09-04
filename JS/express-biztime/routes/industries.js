@@ -6,21 +6,30 @@ const slugify = require("slugify")
 
 router.get('/', async (req, res, next) => {
     try {
-        const results = await db.query(
-            `SELECT * FROM companies`);
-        //debugger;
-        return res.json({ companies: results.rows });
+        const industryResults = await db.query(
+            `SELECT * FROM industries`);
+
+        for (let ind of industryResults.rows) {
+            const compResults = await db.query(`
+                SELECT company_code FROM industries_companies
+                WHERE industry_code=$1`, [ind.code]);
+
+            const companies = compResults.rows;
+
+            ind.companies = companies.map(comp => comp.company_code);
+        }
+        
+        return res.json({ industries: industryResults.rows });
     } catch (e) {
         return next(e);
-    }
-
+    }   
 })
 
 router.get('/:code', async (req, res, next) => {
     try {
         const { code } = req.params;
-        const companyResults = await db.query(`
-        SELECT * FROM companies
+        const industryResults = await db.query(`
+        SELECT * FROM industries
         WHERE code=$1`, [code]);
 
         const invResults = await db.query(`
@@ -49,24 +58,15 @@ router.get('/:code', async (req, res, next) => {
 })
 router.post('/', async (req, res, next) => {
     try {
-        const { name, description } = req.body;
-        const code = slugify(name, { lower: true, replacement: '-' });
+        const { code, industry } = req.body;
+       
         console.log(`code is : ${code}`);
-        const results = await db.query('INSERT INTO companies (code, name, description) VALUES ($1, $2, $3) RETURNING *', [code, name, description]);
+        const results = await db.query('INSERT INTO industries (code, industry) VALUES ($1, $2) RETURNING *', [code, industry]);
         return res.status(201).json({ company: results.rows[0] });
     } catch (e) {
         return next(e);
     }
 })
-// router.post('/', async (req, res, next) => {
-//     try {
-//         const { code, name, description } = req.body;
-//         const results = await db.query('INSERT INTO companies (code, name, description) VALUES ($1, $2, $3) RETURNING *', [code, name, description]);
-//         return res.status(201).json({ company: results.rows[0] });
-//     } catch (e) {
-//         return next(e);
-//     }
-// })
 
 
 router.put('/:code', async (req, res, next) => {
